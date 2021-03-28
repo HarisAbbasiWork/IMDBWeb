@@ -1,0 +1,198 @@
+doctype html
+| PASTE YOUR HTML CODE HERE
+head
+  title Bootstrap Example
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css')
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js')
+  style.
+    /* Modify the background color */
+    .navbar-custom {
+    background-color: #A90505;
+    border-left: 6px solid #1423A4;
+    }
+    /* Modify brand and text color */
+    .serif {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;
+    }
+    .sidenav {
+    height: 290px;
+    width: 200px;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image: url('https://image.freepik.com/free-photo/watercolor-splash-background_23-2148175602.jpg');
+    overflow-x: hidden;
+    padding-top: 20px;
+    }
+    #WTH {
+    position: relative;
+    top: 80px;
+    }
+    
+    .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #070707 ;
+    display: block;
+    }
+    .sidenav h12 {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #FCFBFB;
+    border-left: 6px solid #1423A4;
+    display: block;
+    background-color: #A90505;
+    }
+    .sidenav2 {
+    height: 290px;
+    width: 200px;
+    position: relative;
+    z-index: 1;
+    top: -287px;
+    left: 500px;
+    background-image: url('https://image.freepik.com/free-photo/watercolor-splash-background_23-2148175602.jpg');
+    overflow-x: hidden;
+    padding-top: 20px;
+    padding-left: 0px;
+    }
+    .sidenav2 a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #070707 ;
+    display: block;
+    }
+    .sidenav2 h12 {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #FCFBFB;
+    border-left: 6px solid #1423A4;
+    display: block;
+    background-color: #A90505;
+    }
+    .sidenav3 {
+    height:290px;
+    width: 200px;
+    position: relative;
+    z-index: 1;
+    top: -577px;
+    left: 1065px;
+    background-image: url('https://image.freepik.com/free-photo/watercolor-splash-background_23-2148175602.jpg');
+    overflow-x: hidden;
+    padding-top: 20px;
+    padding-left: 0px;
+    }
+    .sidenav3 a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #070707 ;
+    display: block;
+    }
+    .sidenav3 h12 {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #FCFBFB;
+    border-left: 6px solid #1423A4;
+    display: block;
+    background-color: #A90505;
+    }
+    .fixed-footer{
+    width: 100%;
+    background: #333;
+    padding: 10px 0;
+    color: #fff;
+    bottom: 0;
+    }
+    body{margin:auto;padding:auto;background-image:url("https://eftm.com/wp-content/uploads/2020/03/bba9dce9-c6e0-4ac7-433c-b4e3438db177-scaled.jpg");background-repeat: no-repeat;background-attachment: fixed;background-position: center;}
+    .Center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height:500px;
+    width:800px;
+    }
+body()    
+nav.navbar.navbar-inverse.navbar.navbar-custom
+  .container-fluid
+    .navbar-header
+      a.navbar-brand(style='color: #FEFEFE ; font-family: Times, serif; font-weight: bold; font-size: 25px' href='#') Abbasi Recommendations
+    ul.nav.navbar-nav
+      li
+        a(style='color: #FEFEFE ; font-family: Times, serif; font-weight: bold; font-size: 25px' href='/') Home
+      li
+        a(style='color: #FEFEFE ; font-family: Times, serif; font-weight: bold; font-size: 25px' href='/movies') Movies
+      li
+        a(style='color: #FEFEFE ; font-family: Times, serif; font-weight: bold; font-size: 25px' href='/tvshows') TV Shows
+      li
+        a(style='color: #FEFEFE ; font-family: Times, serif; font-weight: bold; font-size: 25px' href='/mylist') My List
+      li
+        .dropdown
+          button#menu1.btn.btn-default.dropdown-toggle(type='button' data-toggle='dropdown' style='color: #fcf9f9 ; background-color: black; font-family: Times, serif; font-weight: bold; font-size: 25px')=Account
+            span.caret
+          ul.dropdown-menu(role='menu' aria-labelledby='menu1')
+            li(role='presentation')
+              a(role='menuitem' tabindex='-1' href='/profile') Profile
+            li(role='presentation')
+              a(role='menuitem' tabindex='-1' href='/logout') Logout
+    form.navbar-form.navbar-right(action='/action_page.php')
+      .form-group
+        input.form-control(type='text' placeholder='Search' name='search')
+      button.btn.btn-success(type='submit') Submit
+#WTH.jumbotron
+  img(style='width:150px;height:200px;margin-left:40%;margin-right:20px;margin-bottom:20px' src=Pimage alt='Smiley face')
+  a
+    br
+  h8(style='font-size: 25px; margin-left:560px;')=Account
+  br
+  h8.serif Email:
+  h8.serif=" "+Email
+  h8.serif(style='margin-left: 600px;') Password:
+  h8.serif *******
+  br
+  br
+  br
+  br
+  h9.serif(style='margin-left:0;float: left;') Country:
+  h8.serif="  "+Country
+  h8.serif(style='margin-left: 730px;') Year Joined:
+  h8.serif(style='') 2020
+  br
+  button#select_link.btn.btn-success(type='submit' style="margin-left:600px" ) Edit
+div
+  h5
+div
+  h5
+div
+  h5
+div
+  h5
+button#demo.btn.btn-success(type='button') Who Am I?. Click To Know About Me
+script.
+  document.getElementById("demo").addEventListener("click", myFunction);
+  function myFunction() {
+  document.getElementById("demo").innerHTML = "I am CS student of Comsats and i am in 5th semester. I want to make difference by making good websites. Right now i am developing my few trail websites with html css bootstrap node javascript. I hope that i will get some work on fiverr";
+  document.getElementById("demo").setAttribute("class","");
+  document.getElementById("demo").setAttribute("style","width:100%;border:1px solid gray; padding:8px; font-weight:bold; background-image:url(https://wallpaperaccess.com/full/2641047.gif)");
+  }
+div
+  h5
+div
+  h5
+div
+  h5
+div
+  h5
+// Footer
+.fixed-footer
+  .container(style='text-align: center;') Copyright &copy; 2016 Web Designer Haris Abbasi
+// Footer

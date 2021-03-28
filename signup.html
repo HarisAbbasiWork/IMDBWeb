@@ -1,0 +1,167 @@
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Signup</title>
+	<style type="text/css">
+	body{
+	margin:auto;
+	padding:auto;
+	background-image:url("https://eftm.com/wp-content/uploads/2020/03/bba9dce9-c6e0-4ac7-433c-b4e3438db177-scaled.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	}
+	.navbar-custom { 
+            background-color: #A90505;
+            border-left: 6px solid #1423A4;
+
+        }
+	.signup {
+	background-color: #A90505;
+	padding: 80px;
+	width: 390px;
+	margin: auto;
+	margin-top: 80px;
+	height:650px;
+	margin-left:440px;
+	}
+	#gand {
+	width: 240px;
+	
+	text-align: center;
+	margin-top:6px;
+	}
+	input[type=text]{
+		width:240px;
+		text-align:center;
+		background: transparent;
+		border-radius: 40px;
+		border: 1px solid #FFFBCB;
+		font-family: 'Play', sans-sarif;
+		font-size: 16px;
+		font-weight : 200px;
+		padding: 8px 0px;
+		color:#FFFBCB;
+		outline: none;
+		}
+		
+		input[type=submit]{
+			border:1px solid #FFFBCB;
+			width:150px;
+			background-color:#A90505;
+			color: #FFFBCB;
+			font-size:16px;
+			line-height:25px;
+			border-radius: 40px;
+			outline:none;
+			
+		}
+	input[type=submit]:hover{
+	color:#45546C;
+	background-color:#FFFBCB;
+	}
+	h2{
+	color:#FFFBCB;
+	text-align: center;
+	margin-bottom:8px;
+	position:relative;
+	top:-15px;
+	}
+	::placeholder{
+	color: #FFFBCB;
+	opacity:0.7;
+	}
+	.signup p{
+	 text-align:center;
+	 color:#FFFBCB
+	}
+	
+	
+	body{
+		margin:0;
+		padding:0;
+		}
+#login{
+float:right ;
+position: relative;
+left:10px;
+padding-right:50px;
+
+}
+
+#logo{
+height: 80px;
+width:110px;
+position: relative;
+left:10px;
+
+
+}
+
+
+.clear {
+clear:both;
+}
+	</style>
+    
+</head>
+<body>
+	<div>
+	<nav class="navbar navbar-inverse navbar navbar-custom">
+		<div class="container-fluid">
+		  <div class="navbar-header">
+	  
+			<a class="navbar-brand" style="color: #FEFEFE ; font-family: Times, serif; font-weight: bold; font-size: 25px" href="#">Abbasi Recommendations</a>
+		  </div>
+		  <ul class="nav navbar-nav">
+			<li ><a style="color: #FEFEFE ; font-family: Times, serif; font-weight: bold; font-size: 25px" href="/">Home</a></li>
+			<li><a style="color: #FEFEFE ; font-family: Times, serif; font-weight: bold; font-size: 25px" href="/movies">Movies</a></li>
+			<li><a style="color: #FEFEFE ; font-family: Times, serif; font-weight: bold; font-size: 25px" href="tvshows">TV Shows</a></li>
+			<li><a style="color: #FEFEFE ; font-family: Times, serif; font-weight: bold; font-size: 25px" href="/login">Login</a></li>
+			<li class="active"><a style="color: #FEFEFE ; font-family: Times, serif; font-weight: bold; font-size: 25px" href="/signup">SignUp</a></li>
+		  </ul>
+		  <form  class="navbar-form navbar-right" action="/action_page.php">
+			<div class="form-group">
+			  <input style="color:black; background-color: white;" type="text" class="form-control" placeholder="Search" name="search">
+			</div>
+			<button   type="submit" class="btn btn-success">Submit</button>
+		  </form>
+		</div>
+	  </nav>
+	</div>
+
+<div class="signup">
+ <form id="gand" action="/signup" method="post">
+ <h2>Sign Up</h2>
+ <input type="text" name="fname" id="firstname" placeholder="First name" >
+ <br><br>
+ <input type="text" name="lname" id="lastname" placeholder="Last name" >
+ <br><br>
+ 
+ <input type="text" name="email" id="email" placeholder="email address" >
+ <br><br>
+ 
+ <input type="text" name="pass" id="password" placeholder="New Password" >
+ <br><br>
+ <input type="text" name="cpass" id ="cpass" placeholder="Confirm Password">
+ <br><br>
+ <input type="text" name="country" id="country" placeholder="Enter Country">
+ <br><br>
+ >
+ <input type="submit" id="submitDetails"  
+            name="submitDetails" value="Submit" />
+<br><br>
+<p >Already Have A account?<a style="color: white;" href="/login">  Login</a></p>
+
+ 
+ </form>
+
+</div>
+
+</body>

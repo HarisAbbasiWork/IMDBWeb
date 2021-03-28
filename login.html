@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Sign in</title>
+	<style type="text/css">
+	body{
+		background-image:url("https://eftm.com/wp-content/uploads/2020/03/bba9dce9-c6e0-4ac7-433c-b4e3438db177-scaled.jpg");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center;
+	}
+	.navbar-custom { 
+            background-color: #A90505;
+            border-left: 6px solid #1423A4;
+
+        }
+	.signin {
+		background-color:#A90505;
+		padding: 80px;
+		width: 390px;
+		margin: auto;
+		margin-top: 80px;
+		height:500px;
+		margin-left:440px;
+	}
+	form{
+		width: 240px;
+		text-align: center;
+	}
+	input[type=text]{
+		width:240px;
+		text-align:center;
+		background: transparent;
+		border-radius: 40px;
+		border: 1px solid #FFFBCB;
+		font-family: 'Play', sans-sarif;
+		font-size: 16px;
+		font-weight : 200px;
+		padding: 10px 0px;
+		color:#FFFBCB;
+		outline: none;
+		
+		}
+		input[type=password]{
+		width:240px;
+		text-align:center;
+		background: transparent;
+		border-radius: 40px;
+		border: 1px solid #FFFBCB;
+		font-family: 'Play', sans-sarif;
+		font-size: 16px;
+		font-weight : 200px;
+		padding: 10px 0px;
+		color:#FFFBCB;
+		outline: none;
+		
+		}
+		input[type=email]{
+		width:240px;
+		text-align:center;
+		background: transparent;
+		border-radius: 40px;
+		border: 1px solid #FFFBCB;
+		font-family: 'Play', sans-sarif;
+		font-size: 16px;
+		font-weight : 200px;
+		padding: 10px 0px;
+		color:#FFFBCB;
+		outline: none;
+		
+		}
+		input[type=submit]{
+			border:1px solid #FFFBCB;
+			width:150px;
+			background-color:#A90505;
+			color: #FFFBCB;
+			font-size:16px;
+			line-height:25px;
+			border-radius: 40px;
+			outline:none;
+			
+		}
+		
+		.password-holder-signin{
+		 margin-top:15px;
+		}
+		input[type=submit]:hover{
+			color:#45546C;
+			background-color:#FFFBCB;
+
+		}
+		h2{
+			color:#FFFBCB;
+			text-align: center;
+		}
+		
+	a:hover{
+	text-decoration:underline;
+	}
+	.container{
+		display: flex;
+		flex:direction:row;
+		width:100%;
+	}
+	::placeholder{
+	color: #FFFBCB;
+	opacity:0.8;
+	}
+	.signin p{
+	color:#FFFBCB;
+	}
+	
+#login{
+float:right ;
+position: relative;
+left:10px;
+padding-right:50px;
+
+}
+
+#logo{
+height: 80px;
+width:110px;
+position: relative;
+left:10px;
+
+
+}
+
+
+	</style>
+    
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar navbar-custom">
+		<div class="container-fluid">
+		  <div class="navbar-header">
+	  
+			<a class="navbar-brand" style="color: #FEFEFE ; font-family: Times, serif; font-weight: bold; font-size: 25px" href="#">Abbasi Recommendations</a>
+		  </div>
+		  <ul class="nav navbar-nav">
+			<li ><a style="color: #FEFEFE ; font-family: Times, serif; font-weight: bold; font-size: 25px" href="/">Home</a></li>
+			<li><a style="color: #FEFEFE ; font-family: Times, serif; font-weight: bold; font-size: 25px" href="/movies">Movies</a></li>
+			<li><a style="color: #FEFEFE ; font-family: Times, serif; font-weight: bold; font-size: 25px" href="/tvshows">TV Shows</a></li>
+			<li class="active"><a style="color: #FEFEFE ; font-family: Times, serif; font-weight: bold; font-size: 25px" href="/login">Login</a></li>
+			<li><a style="color: #FEFEFE ; font-family: Times, serif; font-weight: bold; font-size: 25px" href="/signup">SignUp</a></li>
+		  </ul>
+		  <form  class="navbar-form navbar-right" action="/action_page.php">
+			<div class="form-group">
+			  <input style="color:black; background-color: white;" type="text" class="form-control" placeholder="Search" name="search">
+			</div>
+			<button   type="submit" class="btn btn-success">Submit</button>
+		  </form>
+		</div>
+	  </nav>
+
+			
+<div class="signin">
+<h2>Login</h2>
+ <form action="/login" method="post">
+<input class="password-holder-signin" type="email" name="email" placeholder="Enter Email" >
+<input class="password-holder-signin"  type="text" name="password" placeholder="Password" >
+<br><br>
+<a href=""> <input class="btn btn-success" type="submit" value="login"></a>
+<br><br>
+<div id="container">
+<div id="forgot">
+<a style="color: white;" href=""> Forgot Password </a>
+
+</div>
+<br><br>
+<p >Dont have an account?<a style="color: white;" href="/signup">  Sign Up</a></p>
+ </form>
+</div>
+</div>
+
+</body>
