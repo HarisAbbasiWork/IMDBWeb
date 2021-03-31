@@ -302,7 +302,7 @@ app.get('/',function(req,res){
     console.log(req.url);
 
     if(i==1){
-        res.render('home', { Account: req.session.name});
+        res.render("home/home", { Account: req.session.name});
 
     }else if(i==0){
         res.sendFile(path.join(__dirname + '/Bootstrapwebbb.html'));
@@ -312,4 +312,5 @@ app.get('/',function(req,res){
 
     }).listen(3000) 
 
+    
 
